@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+           position: relative;
+           top: 300px;
+           left: 0px;
+           background-color: rgb(230, 235, 240);
+           height: 30px;
+           border-radius: 20%;
+           color: rgb(255, 127, 232);
+
+           border: 3px solid rgb(6, 30, 218);
+          
+          }
+        div{
+            height: 250px;
+            width: 250px;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <button class="A">RED</button>
+    <button class="B">BLUE</button>
+    <button class="C">GREEN</button>
+    <button class="D">BLACK</button>
+      <div></div>
+     <script>
+        let btn1 = document.querySelector(".A");
+        let btn2 = document.querySelector(".B");
+        let btn3 = document.querySelector(".C");
+        let btn4 = document.querySelector(".D");
+
+      btn1.addEventListener('click' ,() => {
+        document.querySelector("div").style.backgroundColor = "red";
+        document.querySelector("div").style.color = "red";
+        document.querySelector("div").style.borderRadius="30%";
+        document.querySelector("body").style.backgroundColor = "darkblue";
+   
+    } )
+      btn2.addEventListener('click' ,() => {
+        document.querySelector("div").style.backgroundColor = "darkblue";
+        document.querySelector("div").style.color = "blue";
+        document.querySelector("div").style.borderRadius = "40%";
+        document.querySelector("body").style.backgroundColor = "red";
+    } )
+      btn3.addEventListener('click' ,() => {
+        document.querySelector("div").style.backgroundColor = "green";
+        document.querySelector("div").style.borderRadius ="30%";
+        document.querySelector("body").style.backgroundColor = "black";
+    } )
+      btn4.addEventListener('click' ,() => {
+        document.querySelector("div").style.backgroundColor = "black";
+        document.querySelector("div").style.borderRadius = "20%";
+        document.querySelector("body").style.backgroundColor = "green";
+    } )
+      
+        
+     </script>
+</body>
+</html>
